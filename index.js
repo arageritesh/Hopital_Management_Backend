@@ -32,7 +32,9 @@ app.use("/api/v1/appointment", appointmentRouter);
 dbConnection();
 
 app.use(errorMiddleware);
-
+app.listen(port, () => {
+  console.log(`Server listening at port ${port}`);
+});
 export default app;
 
 
