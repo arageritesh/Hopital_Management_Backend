@@ -1,6 +1,6 @@
 import app from "./index.js";
 import cloudinary from "cloudinary";
-const port = process.env.PORT || 5000;
+
 
 cloudinary.v2.config({
   cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
