@@ -8,6 +8,7 @@ import messageRouter from "./router/messageRouter.js";
 import errorMiddleware from "./middlewares/errorMiddleware.js";
 import userRouter from "./router/userRouter.js";
 import appointmentRouter from "./router/appointmentRouter.js";
+const port = process.env.PORT || 5000;
 const app = express();
 config({path : "./config/config.env"})
 
